@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "979286649867",
+    "firebase_url": "https://syslist-3bf54.firebaseio.com",
+    "project_id": "syslist-3bf54",
+    "storage_bucket": "syslist-3bf54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979286649867:android:2119597fb7d4ae4bf5eb0e",
+        "android_client_info": {
+          "package_name": "com.devmarcos.syslist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "979286649867-ngi2geb35p7kt28amaq2nq3katkj4jvs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT1N4-NhE7zCS20MAe2KslGRqRk0Yzq4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "979286649867-ngi2geb35p7kt28amaq2nq3katkj4jvs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
