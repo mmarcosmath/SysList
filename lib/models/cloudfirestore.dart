@@ -42,8 +42,7 @@ class BancoFirebase {
     for (var i in s) {
       Map<String, dynamic> row = ({'id': i.documentID});
       row.addAll(i.data);
-      lists.add(i.data);
-      print(row);
+      lists.add(row);
     }
     return lists != null ? lists : [];
   }
