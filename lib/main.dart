@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:syslist/models/cloudfirestore.dart';
 import 'package:syslist/pages/listaAlunos.dart';
+import 'package:syslist/pages/registrarFalta.dart';
 
 void main() => runApp(Home());
 

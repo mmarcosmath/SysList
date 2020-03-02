@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:csv/csv.dart';
 import 'package:file_picker/file_picker.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:syslist/models/cloudfirestore.dart';
@@ -40,7 +41,7 @@ class _CarregaCsvState extends State<CarregaCsv> {
 
     final input = File(_path).openRead();
     var fields = await input
-        .transform(utf8.decoder)
+        .transform(Latin1Decoder())
         .transform(CsvToListConverter())
         .toList();
 
@@ -53,7 +54,12 @@ class _CarregaCsvState extends State<CarregaCsv> {
           p.add(i);
         }
       }
-
+      // fire.fire.collection('${a.substring(p[1] + 1, a.length)}').add({
+      //   'matricula': '${a.substring(0, p[0])}',
+      //   'nome': '${a.substring(p[0] + 1, p[1])}',
+      //   'turma': '${a.substring(p[1] + 1, a.length)}',
+      //   'presente': false
+      // });
       fire.add({
         'matricula': '${a.substring(0, p[0])}',
         'nome': '${a.substring(p[0] + 1, p[1])}',

@@ -70,8 +70,7 @@ class ListaAlunosState extends State<ListaAlunos> {
           IconButton(
             icon: Icon(Icons.camera_alt),
             onPressed: () async {
-              // await fire.deleteAll(widget.alunos);
-              
+              await fire.deleteAll(widget.alunos);
               await Navigator.push(
                 context,
                 MaterialPageRoute(

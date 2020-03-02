@@ -32,7 +32,7 @@ class BancoFirebase {
   Future<List<Map<String, dynamic>>> getAll() async {
     List<Map<String, dynamic>> lists = [];
     List<DocumentSnapshot> s = [];
-    var a = fire.collection('alunos');
+    var a = fire.collection('alunos').orderBy('turma');
     if (a == null) return [];
     var b = a.snapshots();
     if (await b.isEmpty) return [];
